@@ -1,0 +1,114 @@
+/* Estilo de los productos */
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Mostrar 2 productos por fila */
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 500px; /* Ajusta el ancho de cada tarjeta de producto */
+    margin: 0 auto;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    max-height: 250px; /* Aumenta la altura máxima de las imágenes */
+    object-fit: cover;
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+    filter: brightness(0.85); /* Oscurecimiento suave */
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.product h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.product button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background-color: #575757;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px; /* Reducido para un pie de página más compacto */
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 15px; /* Reducir el padding de las secciones */
+    min-width: 250px;
+    background-color: #444; /* Color de fondo más claro para las secciones */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.footer-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px; /* Bordes inferiores redondeados */
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('DulceriaHero.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 256, 0.8); 
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: 80%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+
+        .login-container .checkbox-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .login-container .checkbox-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .login-container button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            text-transform: uppercase;
+            border-radius: 10px;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .login-container button:hover {
+            background-color: #575757;
+        }
+
+        .login-container p {
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .login-container a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form action="index.html" method="POST">
+            <input type="email" placeholder="Correo Electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="recordarme">
+                <label for="recordarme">Recordarme</label>
+            </div>
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <p>¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a></p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('DulceriaHero.jpg'); /* Aquí colocas la ruta de tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Color blanco con transparencia */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        .register-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .register-container input[type="text"],
+        .register-container input[type="email"],
+        .register-container input[type="password"],
+        .register-container input[type="date"] {
+            width: 80%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+
+        .register-container button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            text-transform: uppercase;
+            border-radius: 10px;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .register-container button:hover {
+            background-color: #575757;
+        }
+
+        .register-container p {
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .register-container a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .register-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="register-container">
+        <h2>Registro</h2>
+        <form action="index.html" method="POST">
+            <input type="text" placeholder="Nombre" required>
+            <input type="text" placeholder="Apellidos" required>
+            <input type="date" placeholder="Fecha de Nacimiento" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <input type="email" placeholder="Confirmar Correo Electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <input type="password" placeholder="Confirmar Contraseña" required>
+
+            <button type="submit">Registrarse</button>
+        </form>
+
+        <p>¿Ya tienes una cuenta? <a href="login.html">Inicia Sesión aquí</a></p>
+    </div>
+
+</body>
+</html>

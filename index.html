@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('DulceriaHero.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+            color: #333;
+        }
+
+        /* Navegación */
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        /* Contenedor principal */
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        /* Sección de productos destacados */
+        .featured-products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            width: 300px;
+            text-align: center;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .product img:hover {
+            transform: scale(1.05);
+            filter: brightness(0.85);
+        }
+
+        .product h3 {
+            font-size: 1.5rem;
+            margin-top: 15px;
+        }
+
+        .product p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .product button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+
+        .product button:hover {
+            background-color: #575757;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+            text-align: left;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 20px;
+            min-width: 250px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-section p, .footer-section a {
+            color: white;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #222;
+            color: white;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Productos</a></li>
+            <li><a href="#">Carrito</a></li>
+            <li><a href="login.html">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Bienvenido a nuestra tienda en línea</h1>
+        <p>Descubre nuestros productos destacados:</p>
+
+        <!-- Sección de productos destacados -->
+        <div class="featured-products">
+            <!-- Producto 1 -->
+            <div class="product">
+                <img src="imagen_1.jpg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>Paquete de Dulces de 50 pzs.</p>
+                <button><a href="detalle_producto.html">Ver más</a></button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product">
+                <img src="imagen_2.jpg" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>Chocolates Rellenos de 20 pzs.</p>
+                <button><a href="detalle_producto.html">Ver más</a></button>
+            </div>
+
+            <div class="product">
+                <img src="imagen_3.jpg" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p>Paquete de Gomitas de 30 pzs.</p>
+                <button><a href="detalle_producto.html">Ver más</a></button>
+            </div>
+
+            <div class="product">
+                <img src="imagen_4.jpg" alt="Producto 4">
+                <h3>Producto 4</h3>
+                <p>Caramelos Ácidos de 15 pzs.</p>
+                <button><a href="detalle_producto.html">Ver más</a></button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: 2130419@upv.edu.mx</p>
+                <p>Tel: +52 129319810</p>
+            </div>
+            <div class="footer-section">
+                <h3>Nuestros Valores</h3>
+                <p>Compromiso, Calidad y Servicio al Cliente.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Déjanos tu Opinión</h3>
+                <p>Queremos saber tu experiencia. <a href="#">Envía tu opinión</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mi Tienda en Línea. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
